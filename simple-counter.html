@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+
+    <!-- Connecting DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Connect tail wind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="font-serif">
+    <main>
+        <!-- Card start -->
+        <section class="flex justify-center items-center h-screen">
+            <div class="card bg-purple-100  w-96">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Let's do some Simple Increment and Decrement</h2>
+                    <p>Count: <span id="count-number">0</span></p>
+                    <div class="card-actions justify-end">
+                    <button class="increase-btn btn w-24 btn-primary">Increase [+]</button>
+                    <button class="decrease-btn btn w-24 btn-primary">Decrease [-]</button>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="./js/simple-counter.js"></script>
+</body>
+</html>
