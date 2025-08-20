@@ -14,22 +14,42 @@
 
 </head>
 <body class="font-serif">
-    <main>
+    <main class="flex flex-col justify-center items-center h-screen">
         <!-- Card start -->
-        <section class="flex justify-center items-center h-screen">
-            <div class="card bg-purple-100  w-96">
+        <section class="mb-20">
+            <div id="counter" class="card bg-purple-100  w-96">
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">Let's do some Simple Increment and Decrement</h2>
                     <p>Count: <span id="count-number">0</span></p>
                     <div class="card-actions justify-end">
-                    <button onclick="increaseCount()" class="increase-btn btn w-24 btn-primary">Increase [+]</button>
-                    <button onclick="decreaseCount()" class="decrease-btn btn w-24 btn-primary">Decrease [-]</button>
+                    <button class="increase-btn btn w-24 btn-primary">Increase [+]</button>
+                    <button class="decrease-btn btn w-24 btn-primary">Decrease [-]</button>
                     </div>
                 </div>
                 </div>
         </section>
+        <!-- Cart End -->
+
+        <!-- Description Start -->
+                 <section>
+             <div class="card bg-purple-100  w-96">
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Description of Simple Counter</h2>
+
+                    <p>If you click in Increase [+] and Decrease [-] button you will observer the number in Count increase and decrease.</p>
+                    <p>If you click on the box all the button will be disabled, if you click the box second time the count will be reset to 0.</p>
+                </div>
+                </div>
+        </section>
+        <!-- Description End -->
+
     </main>
 
     <script src="./js/simple-counter.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- class="flex justify-center items-center h-screen" -->
