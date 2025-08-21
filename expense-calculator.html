@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Calculator</title>
+    
+    <!-- Connecting DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Connect tail wind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <main>
+        <!-- Calculator -->
+        <section class="flex justify-center items-center h-screen">
+            <div>
+            <!-- Total expense - Stat -->
+            <div class="flex justify-center mb-20">
+                <div class="stats bg-base-100 border-base-300 border">
+                    <div class="stat">
+                        <div class="stat-value">Total Expense</div>
+                    </div>
+
+                    <div class="stat">
+                        <div id="sum-of-expense" class="stat-value">0</div>    
+                    </div>
+                </div>
+            </div>
+            <!-- Total expense - Stat End-->
+
+
+            <!-- search and btn start-->
+            <div>
+                <div class="join mb-12">
+                    <input id="expense-field" class="input join-item" placeholder="Item Name"/>
+                    <input id="amount-field" class="input join-item" placeholder="Price" type="number"/>
+                    <button id="expense-insert-btn" class="btn join-item rounded-r-full bg-purple-800 text-white">Calculate</button>
+                </div>
+            </div>
+            <!-- search and btn end -->
+
+            <!-- Card to store all the items - start -->
+            <div id="row-container" class="card card-dash bg-purple-100 w-115">
+                <div class="card-body" data-amount="${amount}">
+                    <h2 class="card-title">You List</h2>
+<!--                <div class="flex">
+                         <p>${expense}</p>
+                        <p>${amount} Euro</p>
+                    </div>  --> 
+                </div>  
+               
+            </div>
+            <!-- Card to store all the items - end -->
+            </div>
+        </section>
+    </main>
 
 
     <script src="./js/expense-calculator.js"></script>
 </body>
 </html>
+
